@@ -20,4 +20,5 @@ Route::middleware(['auth:sanctum'])->group(function() {
     });
 
     Route::get('/topics', 'TopicController@topics');
+    Route::get('/topic/{id}', 'TopicController@topic');
 });

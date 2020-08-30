@@ -10,4 +10,8 @@ class TopicController extends Controller
     public function topics() {
         return Topic::all();
     }
+
+    public function topic($id) {
+        return Topic::find($id);
+    }
 }
