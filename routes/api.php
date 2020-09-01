@@ -19,6 +19,8 @@ Route::middleware(['auth:sanctum'])->group(function() {
         return $request->user();
     });
 
-    Route::get('/topics', 'TopicController@topics');
-    Route::get('/topic/{id}', 'TopicController@topic');
+    Route::apiResources([
+        'topics' => 'API\TopicController'
+    ]);
+
 });
