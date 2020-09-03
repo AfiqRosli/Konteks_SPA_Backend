@@ -13,9 +13,13 @@ class TopicController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($topic = null)
     {
-        return Topic::all();
+        if ($topic == null) {
+            return Topic::all();
+        }
+
+        return Topic::find($topic)->lessons()->get();
     }
 
     /**

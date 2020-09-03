@@ -20,6 +20,7 @@ Route::middleware(['auth:sanctum'])->group(function() {
     });
 
     Route::apiResource('topics', 'API\TopicController');
+    Route::get('topics/{topic}/lessons', 'API\TopicController@index')->name('topics.lessons.index');
+
     Route::apiResource('lessons', 'API\LessonController');
-    Route::get('/lessons/topics/{topic}', 'API\LessonController@index')->name('lessons.topics.index');
 });
