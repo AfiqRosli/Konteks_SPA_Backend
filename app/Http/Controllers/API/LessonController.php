@@ -13,13 +13,13 @@ class LessonController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($topic = null)
+    public function index($lesson = null)
     {
-        if ($topic == null) {
+        if ($lesson == null) {
             return Lesson::all();
         }
 
-        return Lesson::where('topic_id', $topic)->get();
+        return Lesson::find($lesson)->lessonContents()->get();
     }
 
     /**
