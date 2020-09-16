@@ -18,14 +18,14 @@ class LessonSeeder extends Seeder
                 'type' => 0,
                 'opening' => 'First session in class',
                 'title' => 'Ice Breaking',
-                'context' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui velit voluptatibus nihil impedit atque ad optio non ea similique cumque?',
+                'context' => 'You are in a classroom and eveyone are asked to introduce themselves. Now, it\'s your turn.',
             ],
             [
                 'topic_id' => 1,
                 'type' => 0,
                 'opening' => 'You are in an',
                 'title' => 'Interview',
-                'context' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui velit voluptatibus nihil impedit atque ad optio non ea similique cumque?',
+                'context' => 'You are in an interview to get a web developer position and the interviewer wanted to know about you.',
             ],
             [
                 'topic_id' => 1,
