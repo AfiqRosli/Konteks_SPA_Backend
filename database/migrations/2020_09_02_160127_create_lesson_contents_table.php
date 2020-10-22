@@ -23,6 +23,7 @@ class CreateLessonContentsTable extends Migration
             $table->string('says');
             $table->string('says_translation')->nullable();
             $table->boolean('user_input');
+            $table->string('synonyms')->nullable();
             $table->timestamps();
         });
     }

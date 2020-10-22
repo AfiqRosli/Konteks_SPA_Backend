@@ -14,7 +14,8 @@ class LessonContent extends Model
         'lang_translation',
         'says',
         'says_translation',
-        'user_input'
+        'user_input',
+        'synonyms'
     ];
 
     public function lesson() {
